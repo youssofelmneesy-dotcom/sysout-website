@@ -63,7 +63,8 @@ export default function Hero() {
             className="text-xl md:text-2xl text-purple-200 mb-12 max-w-3xl mx-auto"
             style={{ fontFamily: 'Rajdhani, sans-serif' }}
           >
-            From Ideas to Reality – SYSOUT
+            From Ideas to Reality – SYSOUT ...
+            SYS inside, OUT behind  📤
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -117,3 +118,6 @@ export default function Hero() {
     </section>
   );
 }
+
+
+

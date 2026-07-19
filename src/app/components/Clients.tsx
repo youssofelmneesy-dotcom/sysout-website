@@ -1,8 +1,16 @@
+// هذا القسم (Clients) اتعطل بناءً على طلبك.
+// الكود الأصلي محفوظ بالكامل في التعليق تحت لو حبيت ترجعه تاني في أي وقت.
+ 
+export default function Clients() {
+  return null;
+}
+ 
+/*
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef, useState, useEffect } from 'react';
 import { Quote } from 'lucide-react';
-
+ 
 const testimonials = [
   {
     text: 'SYSOUT transformed our business completely. Their innovative solutions helped us scale 10x in just 6 months.',
@@ -25,8 +33,7 @@ const testimonials = [
     company: 'SecureNet Solutions',
   },
 ];
-
-// Mock company logos
+ 
 const companies = [
   { name: 'TechCorp', logo: '🚀' },
   { name: 'DataFlow', logo: '📊' },
@@ -35,24 +42,24 @@ const companies = [
   { name: 'CyberShield', logo: '🛡️' },
   { name: 'QuantumLabs', logo: '⚛️' },
 ];
-
-export default function Clients() {
+ 
+export default function ClientsOriginal() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [currentIndex, setCurrentIndex] = useState(0);
-
+ 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
-
+ 
     return () => clearInterval(interval);
   }, []);
-
+ 
   return (
     <section ref={ref} className="relative py-24 bg-gradient-to-b from-black via-purple-950/10 to-black">
       <div className="container mx-auto px-6">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.6 }}
@@ -61,8 +68,7 @@ export default function Clients() {
         >
           Our <span className="text-purple-400">Clients</span>
         </motion.h2>
-
-        {/* Client logos */}
+ 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -79,7 +85,7 @@ export default function Clients() {
               className="flex flex-col items-center gap-2 p-6 bg-purple-900/20 border border-purple-500/30 rounded-xl hover:border-purple-500/60 transition-colors duration-300"
             >
               <span className="text-4xl">{company.logo}</span>
-              <span 
+              <span
                 className="text-sm text-purple-300"
                 style={{ fontFamily: 'Rajdhani, sans-serif' }}
               >
@@ -88,8 +94,7 @@ export default function Clients() {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* Testimonials carousel */}
+ 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -97,11 +102,10 @@ export default function Clients() {
           className="max-w-4xl mx-auto"
         >
           <div className="relative bg-gradient-to-br from-purple-900/30 to-blue-900/30 border border-purple-500/30 rounded-2xl p-8 md:p-12 overflow-hidden">
-            {/* Quote icon */}
             <div className="absolute top-6 left-6 opacity-20">
               <Quote className="w-16 h-16 text-purple-400" />
             </div>
-
+ 
             <div className="relative z-10">
               <motion.div
                 key={currentIndex}
@@ -110,21 +114,21 @@ export default function Clients() {
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.5 }}
               >
-                <p 
+                <p
                   className="text-xl md:text-2xl text-purple-100 mb-6 italic"
                   style={{ fontFamily: 'Rajdhani, sans-serif' }}
                 >
                   "{testimonials[currentIndex].text}"
                 </p>
-
+ 
                 <div>
-                  <p 
+                  <p
                     className="text-lg text-white"
                     style={{ fontFamily: 'Orbitron, sans-serif' }}
                   >
                     {testimonials[currentIndex].author}
                   </p>
-                  <p 
+                  <p
                     className="text-purple-300"
                     style={{ fontFamily: 'Rajdhani, sans-serif' }}
                   >
@@ -132,8 +136,7 @@ export default function Clients() {
                   </p>
                 </div>
               </motion.div>
-
-              {/* Dots indicator */}
+ 
               <div className="flex justify-center gap-2 mt-8">
                 {testimonials.map((_, index) => (
                   <button
@@ -154,3 +157,6 @@ export default function Clients() {
     </section>
   );
 }
+*/
+ 
+

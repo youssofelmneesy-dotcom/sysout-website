@@ -15,7 +15,7 @@ export default function IntroPage() {
 
     // Navigate to language selection after 5 seconds
     const navigationTimer = setTimeout(() => {
-      navigate('/language');
+      navigate('/home');
     }, 5000);
 
     return () => {
@@ -38,19 +38,19 @@ export default function IntroPage() {
             className="text-8xl md:text-9xl font-bold mb-8"
             style={{ 
               fontFamily: 'Orbitron, sans-serif',
-              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
+              background: 'linear-gradient(135deg, #08185f 0%, #692daa 50%, #513dc1 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
-              textShadow: '0 0 80px rgba(147, 51, 234, 0.5)',
-              filter: 'drop-shadow(0 0 20px rgba(147, 51, 234, 0.8))'
+              textShadow: '0 0 80px rgba(56, 4, 152, 0.5)',
+              filter: 'drop-shadow(0 0 20px rgba(1, 22, 80, 0.8))'
             }}
           >
             SYSOUT
           </h1>
         </motion.div>
 
-        {showSubtext && (
+        {/* {showSubtext && (
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -60,10 +60,12 @@ export default function IntroPage() {
           >
             Enter the Future
           </motion.p>
-        )}
+        )} */}
+
+
 
         {/* Sound indicator */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 0.5 }}
@@ -89,7 +91,7 @@ export default function IntroPage() {
             </div>
             <span style={{ fontFamily: 'Rajdhani, sans-serif' }}>Audio Experience</span>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Glow overlay */}
