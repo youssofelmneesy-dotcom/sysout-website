@@ -7,12 +7,12 @@ const team = [
   {
     name: 'Eng/ Youssof Elfaidy',
     portfolio: 'https://youssof-elfaidy-portfolio.vercel.app/',
-    image: 'photos/نسخة من IMG_2047.jpg',
+    image: '/photos/youssof.jpg',
   },
   {
     name: 'Eng/ Adham Haiba',
     portfolio: 'https://adham1611.github.io/Professional-Portfolio-Website/',
-    image: 'photos/‏لقطة الشاشة ٢٠٢٦-٠٤-٠١ في ١٠.٤٦.٠٤ م.png',
+    image: '/photos/adham.png',
   },
  
 ];
