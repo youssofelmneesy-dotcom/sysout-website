@@ -2,19 +2,19 @@ import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
 import { ExternalLink } from 'lucide-react';
+
  
 const team = [
   {
-    name: 'Eng/ Youssof Elfaidy',
-    portfolio: 'https://youssof-elfaidy-portfolio.vercel.app/',
-    image: '/photos/youssof.jpg',
+    name: "Eng/ Youssof Elfaidy",
+    portfolio: "https://youssof-elfaidy-portfolio.vercel.app/",
+    image: "/photos/youssof.jpg",
   },
   {
-    name: 'Eng/ Adham Haiba',
-    portfolio: 'https://adham1611.github.io/Professional-Portfolio-Website/',
-    image: '/photos/adham.png',
+    name: "Eng/ Adham Haiba",
+    portfolio: "https://adham1611.github.io/Professional-Portfolio-Website/",
+    image: "/photos/adham.png",
   },
- 
 ];
  
 export default function Team() {
